@@ -1,0 +1,74 @@
+/* BeenHost copy — compact sizes */
+.bh{color:#e8ebf5;font-size:14px;line-height:1.35;padding-bottom:24px}
+.bh a{color:#e8ebf5;text-decoration:none}
+.bh-card{background:#23263a;border-radius:16px;padding:14px 16px;margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.bh-links{display:flex;flex-wrap:wrap;gap:12px 22px}
+.bh-links a{cursor:pointer;font-size:14px;white-space:nowrap;display:inline-flex;align-items:center;transition:color .2s}
+.bh-links a:hover{color:#6aa9ff}.bh-links a.on{color:#4ec97b}
+.bh-links i{width:18px;margin-right:8px;text-align:center;font-size:14px}
+.bh-avatar{display:block;margin:6px auto 14px;width:55%;max-width:240px;aspect-ratio:4/5;object-fit:cover;background:#c8d0de;border-radius:6px}
+.bh-center{text-align:center}.bh-name{font-size:15px;margin-bottom:12px}
+.bh-online{color:#4ec97b;font-size:15px;margin-bottom:6px}
+.bh-row{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;padding:14px 16px;word-break:break-all}
+.bh-row a.lnk{color:#4a9be8;word-break:break-all}
+.bh-row .ic{color:#4a9be8;cursor:pointer;font-size:17px;flex:none}
+.bh-btn-red{background:#eb4c42;color:#fff!important;border:0;border-radius:8px;padding:9px 18px;font-size:14px;cursor:pointer;flex:none}
+.bh-btn-red:hover{filter:brightness(1.1)}
+.bh-link-blue{color:#4a9be8!important;cursor:pointer}
+/* server cards (list) */
+.bh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.bh-srv{background:rgba(255,255,255,.1);border-radius:12px;padding:12px 14px;color:#e8ebf5}
+.bh-srv .r{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:7px 2px;font-size:14px}
+.bh-srv .r b{font-weight:500;color:#fff;text-align:right}
+.bh-badge{background:#59a791;color:#fff;border-radius:6px;padding:4px 10px;font-size:13px}
+.bh-st-off{color:#eb4c42;font-weight:700}.bh-st-on{color:#4ec97b;font-weight:700}
+.bh-manage{display:block;margin:10px auto 2px;background:#0091fe;color:#fff!important;border:0;border-radius:6px;padding:8px 22px;font-size:14px;cursor:pointer;text-align:center;width:max-content}
+.bh-manage:hover{background:#027ddb}
+/* manage page */
+.bh-power{text-align:center;padding:20px 10px 16px}
+.bh-power i{font-size:84px;line-height:1;display:block;margin-bottom:18px}
+.bh-power .game{font-size:16px;margin-bottom:14px}
+.bh-power .st{font-size:17px}
+.bh-act{text-align:center;padding:10px 10px}
+.bh-act div{padding:8px;font-size:16px;cursor:pointer}
+.bh-act .go{color:#4ec97b;font-weight:700}.bh-act .stop{color:#eb4c42;font-weight:700}
+.bh-act .re{color:#2a8f8a}.bh-act .del{color:#eb4c42}
+.bh-act i{margin-right:8px;font-size:15px}
+.bh-pill{display:flex;justify-content:space-between;align-items:center;font-size:15px;padding:16px 18px}
+.bh-pill .ic{color:#9aa1c0;cursor:pointer;margin-left:14px;font-size:20px}
+.bh-pill .ic.gear{color:#7d8aa9}
+.bh-term{background:#12141f;color:#cfe8cf;border-radius:10px;padding:10px;height:220px;overflow:auto;font:12px/1.5 monospace;white-space:pre-wrap}
+.bh-input{width:100%;padding:9px 11px;border-radius:8px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#e8ebf5;font:inherit}
+.bh-txt{width:100%;min-height:220px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:#12141f;color:#e8ebf5;font:12px/1.5 monospace}
+.bh table{width:100%;border-collapse:collapse}.bh th,.bh td{text-align:left;padding:8px 6px;border-top:1px solid rgba(255,255,255,.08);font-size:13px}
+.bh th{color:#a5a6ba;font-weight:500;border-top:0}
+.bh h3{font-size:16px;margin:0 0 10px}
+.bh-empty{text-align:center;color:#959ab7;padding:20px}
+/* order page */
+.bh-bar{height:20px;background:#f4f4f4;border-radius:6px;overflow:hidden}
+.bh-bar div{height:100%;background:#59a7ff;min-width:7px;transition:width .3s}
+.buyx #b-go{width:auto;min-width:120px;padding:10px 24px}
+.buyx .bh-hr{border:0;border-top:2px solid rgba(255,255,255,.1);margin:10px 0}
+.buyx .caption-subject{font-size:16px!important}
+.buyx .form-group > label,.buyx .form-group > .control-label{font-size:12px}
+.buyx .form-control,.buyx select,.buyx input[type="text"],.buyx input[type="number"]{padding:8px 10px;font-size:13px}
+.buyx #sum_all{font-size:14px}
+.buyx #infoz_1{font-size:12px}
+/* generic page title / top cards a bit smaller on phones */
+@media (max-width:767px){
+ .content__title{font-size:17px!important}
+ .user-name{font-size:20px!important}
+ .display-content__item{height:72px!important;padding-top:12px!important}
+ .display-content__text{font-size:19px!important;line-height:22px!important}
+ .intro__text,.ysl__text{font-size:20px!important}
+}
+
+/* friends page */
+.bh-fr{padding:2px 2px 6px}
+.bh-pillbtn{display:inline-block;background:#9ea3bd;color:#fff;border-radius:20px;padding:6px 16px;font-size:14px;margin-bottom:8px}
+.bh-fr label.k{display:block;font-size:15px;margin:6px 0 8px}
+.bh-fr-in{width:100%;background:#fff;color:#222;border:1px solid #d8dbe6;border-radius:6px;padding:10px 12px;font-size:14px}
+.bh-fr .pv{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:14px;cursor:pointer;margin:0}
+.bh-fr .pv input{width:20px;height:20px;accent-color:#1a8cff;flex:none;margin:0}
+.bh-fr-add{display:block;width:100%;margin-top:16px;background:#3d8bd0;color:#fff;border:0;border-radius:8px;padding:12px;font-size:15px;cursor:pointer}
+.bh-fr-add:hover{background:#357cbb}

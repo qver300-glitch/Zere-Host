@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#pre-load .b-preloader-background { background: rgb(5, 7, 15); opacity: 0.55; animation: 0.16s ease 0s 1 normal both running hgpl-fade; }
+
+@keyframes hgpl-fade { 
+  0% { opacity: 0; }
+  100% { opacity: 0.55; }
+}
+
+#pre-load .lasdjasd21 { position: absolute; top: 50%; left: 50%; z-index: 1050; display: flex; align-items: center; gap: 15px; width: auto; height: auto; min-width: 232px; max-width: calc(-32px + 100vw); margin: 0px; padding: 20px 26px; transform: translate(-50%, -50%); background: radial-gradient(120% 140% at 0% 0%, rgba(107, 141, 255, 0.16), transparent 60%), linear-gradient(rgb(47, 51, 80), rgb(38, 42, 68)); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.55) 0px 30px 80px, rgba(255, 255, 255, 0.04) 0px 2px 0px inset; overflow: hidden; animation: 0.24s cubic-bezier(0.2, 0.9, 0.3, 1.2) 0s 1 normal both running hgpl-in; }
+
+@keyframes hgpl-in { 
+  0% { opacity: 0; transform: translate(-50%, -46%) scale(0.96); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+#pre-load .lasdjasd21::after { content: ""; position: absolute; left: 0px; right: 0px; bottom: 0px; height: 3px; background: linear-gradient(90deg, transparent, rgb(107, 141, 255), rgb(157, 182, 255), rgb(107, 141, 255), transparent) 0% 0% / 45% 100% no-repeat; animation: 1.25s linear 0s infinite normal none running hgpl-slide; }
+
+@keyframes hgpl-slide { 
+  0% { background-position: -50% 0px; }
+  100% { background-position: 150% 0px; }
+}
+
+#pre-load .lasdjasd21 table, #pre-load .lasdjasd21 tbody, #pre-load .lasdjasd21 tr { display: contents; }
+
+#pre-load .lasdjasd21 table { height: auto !important; }
+
+#pre-load .lasdjasd21 img { display: none; }
+
+#pre-load .lasdjasd21 td { border: 0px; vertical-align: middle; padding: 0px !important; }
+
+#pre-load .lasdjasd21 td:first-child::before { content: ""; display: block; flex: 0 0 auto; width: 26px; height: 26px; border-width: 3px; border-style: solid; border-color: rgb(107, 141, 255) rgb(138, 166, 255) rgba(255, 255, 255, 0.13) rgba(255, 255, 255, 0.13); border-image: none; border-radius: 50%; animation: 0.75s linear 0s infinite normal none running hgpl-spin; }
+
+@keyframes hgpl-spin { 
+  100% { transform: rotate(360deg); }
+}
+
+#pre-load #pre-load-text { display: block; color: rgb(238, 241, 250); font-size: 14px; font-weight: 600; letter-spacing: 0.2px; line-height: 1.4; white-space: nowrap; text-shadow: rgba(0, 0, 0, 0.35) 0px 1px 2px; }
+
+@media (max-width: 480px) {
+  #pre-load .lasdjasd21 { min-width: 0px; padding: 18px 20px; gap: 12px; }
+  #pre-load #pre-load-text { white-space: normal; font-size: 13px; }
+}

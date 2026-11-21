@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.support-how { display: none; min-width: 20px; height: 20px; padding: 0px 6px; margin-left: 8px; border-radius: 10px; background: rgb(235, 76, 66); color: rgb(255, 255, 255); font-size: 11px; font-weight: 700; line-height: 20px; text-align: center; vertical-align: middle; }
+
+.support-notify { display: none; position: fixed; inset: 0px; z-index: 100200; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.65); padding: 16px; }
+
+.support-notify.active { display: flex; }
+
+.support-notify__box { width: 100%; max-width: 400px; background: rgb(31, 32, 41); border: 1px solid rgb(45, 55, 70); border-radius: 14px; padding: 26px 24px; text-align: center; color: rgb(232, 232, 232); box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 60px; }
+
+.support-notify__icon { width: 54px; height: 54px; margin: 0px auto 14px; border-radius: 50%; background: linear-gradient(135deg, rgb(42, 171, 238), rgb(30, 150, 210)); color: rgb(255, 255, 255); font-size: 22px; line-height: 54px; }
+
+.support-notify__title { font-size: 1.1rem; font-weight: 600; color: rgb(255, 255, 255); margin-bottom: 8px; }
+
+.support-notify__text { font-size: 0.88rem; color: rgb(154, 161, 174); margin-bottom: 20px; }
+
+.support-notify__actions { display: flex; gap: 10px; }
+
+.support-notify__btn { flex: 1 1 0%; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 8px; padding: 11px 14px; font-size: 0.92rem; font-weight: 500; cursor: pointer; transition: filter 0.2s; }
+
+.support-notify__btn:hover { filter: brightness(1.12); }
+
+.support-notify__btn--close { background: rgb(45, 55, 70); color: rgb(207, 212, 221); }
+
+.support-notify__btn--go { background: linear-gradient(135deg, rgb(42, 171, 238), rgb(30, 150, 210)); color: rgb(255, 255, 255); }
