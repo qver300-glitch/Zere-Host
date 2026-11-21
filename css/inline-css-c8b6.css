@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.menu__list .menu__sublist { list-style: none; margin: 0px; padding: 0px; overflow: hidden; }
+
+.menu__list .menu__sublist .menu__link { height: 34px; padding-left: 62px; font-size: 13px; color: rgb(165, 166, 186); }
+
+.menu__list .menu__sublist .menu__link::before { display: none; }
+
+.menu__list .menu__sublist .menu__link:hover { color: rgb(255, 255, 255); }
+
+.menu__list .menu__sublist .menu__link.active { color: rgb(80, 200, 120); background-color: rgba(80, 200, 120, 0.1); box-shadow: rgb(80, 200, 120) 3px 0px 0px; }
+
+.menu__list .menu__link.sub::after { content: ""; position: absolute; right: 14px; top: 50%; width: 8px; height: 8px; background: none; border-right: 2px solid rgb(154, 157, 176); border-bottom: 2px solid rgb(154, 157, 176); transform: translateY(-75%) rotate(45deg); transition: transform 0.22s, border-color 0.22s; }
+
+.menu__list .menu__link.sub.down::after { transform: translateY(-25%) rotate(-135deg); border-color: rgb(255, 255, 255); }
+
+.menu__list .menu__link.sub.current { color: rgb(255, 255, 255); }
+
+.menu__list .menu__link.sub.current::after { border-color: rgb(80, 200, 120); }

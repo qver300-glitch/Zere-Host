@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.pmod::before { content: ""; position: fixed; inset: 0px; z-index: -1; background: rgba(8, 10, 18, 0.72); backdrop-filter: blur(4px); animation: 0.25s ease 0s 1 normal both running pmod-fade; }
+
+@keyframes pmod-fade { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.pmod { color: rgb(232, 235, 245); font-family: Inter, Arial, Helvetica, sans-serif; background: none !important; border: 0px !important; border-radius: 14px !important; box-shadow: none !important; }
+
+.pmod > form, .pmod > .modal-content, .pmod > .pmod-panel { display: block; background: rgb(45, 49, 72); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 14px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.45) 0px 24px 60px; animation: 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2) 0s 1 normal both running pmod-in; }
+
+@keyframes pmod-in { 
+  0% { opacity: 0; transform: translateY(10px) scale(0.98); }
+  100% { opacity: 1; transform: none; }
+}
+
+.pmod .modal-header { display: flex; align-items: center; gap: 12px; padding: 16px 22px; margin: 0px; border-width: 0px 0px 1px; border-style: none none solid; border-color: currentcolor currentcolor rgba(255, 255, 255, 0.08); border-image: none; background: none; }
+
+.pmod .modal-title { margin: 0px; font-size: 17px; font-weight: 700; color: rgb(255, 255, 255); line-height: 1.3; }
+
+.pmod .close { order: 2; position: relative; display: block; margin: 0px 0px 0px auto; padding: 0px; width: 32px; height: 32px; flex: 0 0 32px; border: 0px; border-radius: 9px; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(235, 76, 66); opacity: 1; text-shadow: none; font-size: 0px; line-height: 0; transition: filter 0.2s, transform 0.2s; background-image: none !important; text-indent: 0px !important; }
+
+.pmod .close::before { content: "×"; position: absolute; inset: 0px; display: flex; align-items: center; justify-content: center; font-size: 22px; line-height: 1; font-weight: 400; color: rgb(255, 255, 255); }
+
+.pmod .close:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+.pmod .modal-body { padding: 18px 22px; }
+
+.pmod .form-body { padding: 0px; }
+
+.pmod .form-group { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0px 0px 14px; padding: 0px; }
+
+.pmod .form-group:last-child { margin-bottom: 0px; }
+
+.pmod .form-group > label, .pmod .form-group > .control-label { flex: 0 0 190px; max-width: 190px; padding: 0px; font-size: 13px; font-weight: 500; color: rgb(168, 174, 203); text-align: left !important; }
+
+.pmod .form-group > div { flex: 1 1 200px; padding: 0px; width: auto; }
+
+.pmod .form-control, .pmod select, .pmod input[type="text"], .pmod input[type="number"] { height: auto; padding: 10px 12px; font-size: 14px; color: rgb(232, 235, 245); background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; box-shadow: none; transition: border-color 0.2s, background 0.2s, box-shadow 0.2s; width: 100% !important; }
+
+.pmod .form-control:focus, .pmod select:focus, .pmod input[type="text"]:focus { outline: none; border-color: rgb(80, 200, 120); background: rgba(80, 200, 120, 0.06); box-shadow: rgba(80, 200, 120, 0.15) 0px 0px 0px 3px; }
+
+.pmod select option { background: rgb(45, 49, 72); color: rgb(232, 235, 245); }
+
+.pmod .input-group { display: flex; width: 100%; }
+
+.pmod .input-group-addon { display: flex; align-items: center; padding: 10px 16px; font-size: 13px; font-weight: 600; color: rgb(168, 174, 203); background: rgba(255, 255, 255, 0.08); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.12) rgba(255, 255, 255, 0.16) rgba(255, 255, 255, 0.12) rgba(255, 255, 255, 0.12); border-image: none; border-radius: 10px 0px 0px 10px; white-space: nowrap; }
+
+.pmod .input-group .form-control { border-radius: 0px 10px 10px 0px; border-left: 0px; padding-left: 14px; }
+
+.pmod .form-group.sum { flex-direction: column; align-items: stretch; gap: 6px; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+
+.pmod .form-group.sum > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 100%; flex: 1 1 auto; }
+
+.pmod .form-group.sum label { flex: 0 1 auto; max-width: none; margin: 0px; padding: 0px; font-size: 13px; font-weight: 500; color: rgb(168, 174, 203); text-align: left !important; }
+
+.pmod .form-group.sum label[id], .pmod .form-group.sum > label:last-child { font-weight: 700; color: rgb(232, 235, 245); text-align: right !important; }
+
+.pmod .modal-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0px; padding: 16px 22px; border-width: 1px 0px 0px; border-style: solid none none; border-color: rgba(255, 255, 255, 0.08) currentcolor currentcolor; border-image: none; background: none; }
+
+.pmod .modal-footer > label { font-size: 13px; font-weight: 500; color: rgb(168, 174, 203); float: none !important; margin: 0px !important; }
+
+.pmod .modal-footer > label span, .pmod .modal-footer #sum_all { display: inline-block; font-size: 22px; font-weight: 700; color: rgb(255, 255, 255); line-height: 1.2; }
+
+.pmod #sum_all, .pmod #sum_tarif, .pmod #sum_disk, .pmod #sum_diskm { color: rgb(80, 200, 120); }
+
+.pmod .btn, .pmod input[type="submit"] { flex: 0 1 auto; min-width: 150px; padding: 12px 26px; border: 0px; border-radius: 10px; font-size: 14px; font-weight: 700; color: rgb(6, 33, 15); background: rgb(80, 200, 120); cursor: pointer; transition: filter 0.2s, transform 0.2s, box-shadow 0.2s; }
+
+.pmod .btn:hover, .pmod input[type="submit"]:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: rgba(80, 200, 120, 0.25) 0px 10px 24px; color: rgb(6, 33, 15); }
+
+.pmod a { color: rgb(80, 200, 120); text-decoration: none; }
+
+.pmod a:hover { text-decoration: underline; }
+
+.pmod input[type="checkbox"] { margin-right: 8px; vertical-align: -1px; }
+
+.pmod .info, .pmod .help-block { font-size: 12px; color: rgb(124, 131, 163); }
+
+@media (max-width: 640px) {
+  .pmod .form-group > label, .pmod .form-group > .control-label { flex: 1 1 100%; max-width: none; }
+  .pmod .modal-footer { justify-content: stretch; }
+  .pmod .btn, .pmod input[type="submit"] { width: 100%; }
+}
+
+.pmod #opis { display: block; width: 100%; max-width: none; flex: 1 1 100%; font-size: 13px; font-weight: 400; line-height: 1.6; color: rgb(168, 174, 203); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 14px 16px !important; text-align: left !important; background: rgba(0, 0, 0, 0.18) !important; }
+
+.pmod #opis br { display: none; }
+
+.pmod #opis .color__text-inf { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0px; border-bottom: 1px dashed rgba(255, 255, 255, 0.07); }
+
+.pmod #opis .color__text-inf:last-child { border-bottom: 0px; }
+
+.pmod .input-icon { position: relative; flex: 1 1 auto; }
+
+.pmod .input-icon i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: rgb(124, 131, 163); font-size: 13px; }
+
+.pmod .input-icon .form-control { padding-left: 34px; border-radius: 10px 0px 0px 10px; }
+
+.pmod .input-group-btn { display: flex; flex: 0 0 auto; }
+
+.pmod .input-group-btn .btn { min-width: 0px; padding: 10px 16px; font-size: 13px; border-radius: 0px 10px 10px 0px; }
+
+.pmod .btn-success { background: rgb(58, 168, 95); color: rgb(255, 255, 255); }
+
+.pmod .btn-success:hover { color: rgb(255, 255, 255); }
+
+.pmod .input-group .form-control:first-child { border-radius: 10px; border-left: 1px solid rgba(255, 255, 255, 0.12); padding-left: 12px; }
